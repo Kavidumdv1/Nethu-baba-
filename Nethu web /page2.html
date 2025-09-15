@@ -1,0 +1,91 @@
+<!DOCTYPE html>  <html lang="si">  
+<head>  
+  <meta charset="UTF-8">  
+  <title>Flower Shop - Page 2</title>  
+  <style>  
+    body {  
+      font-family: sans-serif;  
+      text-align: center;  
+      background: url("https://files.catbox.moe/ue2fjw.jpg") no-repeat center center fixed;  
+      background-size: cover;  
+      position: relative;  
+    }  
+    body::before {  
+      content: "";  
+      position: fixed; top:0; left:0; right:0; bottom:0;  
+      background: rgba(255,255,255,0.7);  
+      z-index: -1;  
+    }  
+    h1 { color:#2e8b57; animation: fadeIn 2s; }  
+    .gallery { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; padding:20px; }  
+    .card {  
+      background:white; padding:15px; border-radius:12px;  
+      box-shadow:0 4px 10px rgba(0,0,0,0.1); width:200px;  
+      transition: transform 0.3s ease, box-shadow 0.3s ease;  
+      opacity:0; animation: fadeIn 1s forwards;  
+    }  
+    .card img { width:100%; border-radius:10px; }  
+    .card:hover { transform:scale(1.05); box-shadow:0 6px 15px rgba(0,0,0,0.2); }  
+    .card p { margin:8px 0; font-weight:bold; }  
+    .price { color:#2e8b57; font-size:14px; margin-bottom:10px; }  
+    .buy-btn {  
+      display:inline-block; padding:6px 12px; border-radius:6px;  
+      background:#25D366; color:white; text-decoration:none; font-size:14px;  
+      transition:background 0.3s;  
+    }  
+    .buy-btn:hover { background:#1da955; }  
+    .pagination{margin:20px;}  
+    .pagination a{margin:0 5px;padding:6px 12px;text-decoration:none;border-radius:5px;  
+                  background:#2e8b57;color:white;}  
+    .fab-container{position:fixed;right:20px;bottom:20px;z-index:999;}  
+    .fab{width:55px;height:55px;border-radius:50%;background:#2e8b57;color:white;  
+         display:flex;justify-content:center;align-items:center;font-size:22px;  
+         cursor:pointer;box-shadow:0 4px 10px rgba(0,0,0,0.3);margin:8px 0;text-decoration:none;}  
+    .fab-options{display:none;flex-direction:column;align-items:flex-end;margin-bottom:10px;}  
+    .fab-options .fab{width:auto;border-radius:25px;padding:10px 15px;font-size:16px;}  
+    .fab-options .wa{background:#25D366;}  
+    .fab-options .fb{background:#1877f2;}  
+    @keyframes fadeIn {from{opacity:0;} to{opacity:1;}}  
+  </style>  
+</head>  
+<body>  
+  <h1>🌸 D&N Flozy | Page 2</h1>  
+  <div class="gallery">  
+    <div class="card"><img src="https://files.catbox.moe/zskwi6.jpg"><p>🌹 FLOWER BOUQUET 8</p><p class="price">රු 1000</p><a href="https://wa.me/94777247003?text=Hello, I want to buy Flower Bouquet 8" target="_blank" class="buy-btn">Buy Now</a></div>  
+    <div class="card"><img src="https://files.catbox.moe/2aspc2.jpg"><p>🌼 FLOWER BOUQUET 9</p><p class="price">රු 2000</p><a href="https://wa.me/94777247003?text=Hello, I want to buy Flower Bouquet 9" target="_blank" class="buy-btn">Buy Now</a></div>  
+    <div class="card"><img src="https://files.catbox.moe/ecnr35.jpg"><p>💐 FLOWER BOUQUET 10</p><p class="price">රු 500</p><a href="https://wa.me/94777247003?text=Hello, I want to buy Flower Bouquet 10" target="_blank" class="buy-btn">Buy Now</a></div>  
+    <div class="card"><img src="https://files.catbox.moe/anxw8m.jpg"><p>🌷 FLOWER BOUQUET 11</p><p class="price">රු 1500</p><a href="https://wa.me/94777247003?text=Hello, I want to buy Flower Bouquet 11" target="_blank" class="buy-btn">Buy Now</a></div>  
+    <div class="card"><img src="https://files.catbox.moe/t16h5g.jpg"><p>🌸 FLOWER BOUQUET 12</p><p class="price">රු 2500</p><a href="https://wa.me/94777247003?text=Hello, I want to buy Flower Bouquet 12" target="_blank" class="buy-btn">Buy Now</a></div>  
+    <div class="card"><img src="https://files.catbox.moe/rdl1m1.jpg"><p>🌻 FLOWER BOUQUET 13</p><p class="price">රු 1500</p><a href="https://wa.me/94777247003?text=Hello, I want to buy Flower Bouquet 13" target="_blank" class="buy-btn">Buy Now</a></div>  
+    <div class="card"><img src="https://files.catbox.moe/jj8kff.jpg"><p>🌺 FLOWER BOUQUET 14</p><p class="price">රු 5500</p><a href="https://wa.me/94777247003?text=Hello, I want to buy Flower Bouquet 14" target="_blank" class="buy-btn">Buy Now</a></div>  
+  </div>  
+  <div class="pagination"><a href="index.html">⬅️ Back</a></div>  
+  <div class="fab-container">  
+    <div class="fab fab-icon">➕</div>  
+    <div class="fab-options">  
+      <a href="https://wa.me/94777247003" target="_blank" class="fab wa">💬 WhatsApp</a>  
+      <a href="https://facebook.com/your-page-link" target="_blank" class="fab fb">📘 Facebook</a>  
+    </div>  
+  </div>  
+  <script>  
+    const fabBtn=document.querySelector('.fab-icon');  
+    const fabOptions=document.querySelector('.fab-options');  
+    fabBtn.addEventListener('click',()=>{  
+      fabOptions.style.display=fabOptions.style.display==='flex'?'none':'flex';  
+      fabBtn.innerText=fabOptions.style.display==='flex'?'✖':'➕';  
+    });  
+  </script>  
+</body>  
+</html>  
+<footer style="margin-top:40px; padding:25px; text-align:center; background:#2e8b57;">  
+  <p style="color:white; font-size:14px; margin-bottom:10px;">  
+    💻 Website Designed by <strong>KAVIDU INDUWARA WEBCREATE</strong>  
+  </p>  
+  <a href="https://wa.me/94767054052?text=Hello, I want a website like this"   
+     target="_blank"   
+     style="display:inline-block; padding:12px 25px; border-radius:8px;   
+            background:#25D366; color:white; font-weight:bold; text-decoration:none;   
+            box-shadow:0 3px 6px rgba(0,0,0,0.3); transition:0.3s;">  
+    💬 Contact Website Designer  
+  </a>  
+</footer>  
