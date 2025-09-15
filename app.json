@@ -1,0 +1,19 @@
+{
+  "name": "blood-xmd-webapp",
+  "description": "BLOOD-XMD Web App with deployable MINI BOT",
+  "repository": "https://github.com/YOUR_GITHUB_USERNAME/blood-xmd-webapp",
+  "logo": "https://files.catbox.moe/rs1zep.jpg",
+  "keywords": ["node", "express", "whatsapp", "bot", "mini-bot"],
+  "success_url": "/",
+  "env": {
+    "NODE_ENV": {
+      "description": "Set environment",
+      "value": "production"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
