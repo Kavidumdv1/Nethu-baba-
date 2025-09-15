@@ -1,0 +1,18 @@
+{
+  "name": "blood-xmd-webapp",
+  "version": "1.0.0",
+  "description": "BLOOD-XMD Web App with deployable MINI BOT",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "author": "Sachithra Madusanka",
+  "license": "MIT"
+}
